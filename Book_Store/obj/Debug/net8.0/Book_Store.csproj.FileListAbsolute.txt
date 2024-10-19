@@ -261,3 +261,4 @@ D:\Coding\ITI\Book_Store\Book_Store\bin\Debug\net8.0\Microsoft.Extensions.FilePr
 D:\Coding\ITI\Book_Store\Book_Store\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Coding\ITI\Book_Store\Book_Store\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Coding\ITI\Book_Store\Book_Store\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Coding\ITI\Book_Store\Book_Store\obj\Debug\net8.0\Book_Store.sourcelink.json
