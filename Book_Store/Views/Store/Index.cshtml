@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Book_Store.Models.Book>
+
+	@{ViewData["Title"] = "Store";}
+
+	<h2 class = "my-4">Store</h2>
+	<div class=row>
+	@foreach(var book in Model)
+	{
+		<div class = "col-3">
+		<div class="card my-2 store-card" style="width: 18rem;">
+			<a class="a-cleanup" asp-controller="Store" asp-action="Detalis" asp-route-id="@book.Id">
+					<img src="@book.ImageUrl" class="card-img-top" alt="...">
+				<div class="card-body">
+				<h5 class="card-title">@book.Title</h5>
+				<p class="card-text">@book.Description</p> 
+				<span class="card-text">@book.Price.ToString("c")</span>
+					<a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@book.Id" class="btn btn-primary float-right store-btn style"><i class="fa-solid fa-cart-plus "></i></a>
+				
+				 </div>
+					 </a>
+		</div>
+	</div>
+
+		
+	  
+		
+				@* <div class "card" style="width: 18rem";>
+				<a class="a-cleanup" asp-controller="Store" asp-action="Detalis" asp-route-id="@book.Id">
+					<img src="@book.ImageUrl" class="card-img-top" card-img-custom />
+					<div class "card-body" >
+						<h5 class="card-title">@book.Title</h5>
+					</div>
+					<div class="card-body">
+						<span class="card-text">@book.Price.ToString("c")</span>
+							<a asp-controller="" asp-action="" asp-route-id="@book.Id" class="btn btn-primary float-right store-btn"><i class="fa-solid fa-cart-plus"></i></a>
+						
+					</div>
+
+				</a>
+				
+
+
+			</div> *@
+		
+
+
+
+	}
+
+
+	</div>
